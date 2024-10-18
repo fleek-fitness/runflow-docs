@@ -61,7 +61,11 @@
         },
         {
           "group": "AI",
-          "pages": ["nodes/ai/llm-caller", "nodes/ai/translator"]
+          "pages": [
+            "nodes/ai/llm-caller",
+            "nodes/ai/translator",
+            "nodes/ai/data-extractor"
+          ]
         }
       ]
     }
