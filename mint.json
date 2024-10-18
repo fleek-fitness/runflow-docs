@@ -60,6 +60,14 @@
           "pages": ["nodes/core/input", "nodes/core/output"]
         },
         {
+          "group": "데이터 로더",
+          "pages": [
+            "nodes/data-loader/file-loader",
+            "nodes/data-loader/website-scraper",
+            "nodes/data-loader/youtube-transcriber"
+          ]
+        },
+        {
           "group": "AI",
           "pages": [
             "nodes/ai/llm-caller",
