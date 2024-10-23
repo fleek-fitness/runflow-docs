@@ -26,8 +26,8 @@
     }
   ],
   "topbarCtaButton": {
-    "name": "대시보드",
-    "url": "https://www.runflow.co/my-flows"
+    "name": "시작하기",
+    "url": "https://www.runflow.co/dashboard"
   },
   "tabs": [],
   "anchors": [
