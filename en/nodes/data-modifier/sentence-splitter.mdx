@@ -1,0 +1,33 @@
+---
+title: "SentenceSplitter"
+description: "텍스트를 문장 단위로 분리하는 노드"
+---
+### Node Input
+
+- `content` (string or string[]): The text or list of texts to be split into sentences. You can input in the form of a string or a list of strings.
+
+### Node Output
+
+- `sentences` (string[] or string[][]): The result of splitting the input `content` into sentences. If a single text is input, it is returned as a list of sentences, and if multiple texts are input, it is returned as a list of sentence lists for each text.
+
+### Function
+
+The SentenceSplitter node is responsible for splitting the input text into sentences. It divides the given text based on punctuation marks and is capable of processing multiple texts simultaneously. Each sentence is returned neatly by removing delimiters such as spaces or symbols used for separation.
+
+### When to Use?
+
+The SentenceSplitter node is useful in the following situations:
+
+- When you need to split long texts into multiple sentences for analysis or processing
+- When data needs to be broken down into sentences in a natural language processing workflow
+- When separating sentences in interactive AI systems to perform individual tasks
+
+### Examples
+
+1. Splitting a long article or document into multiple sentences for text analysis
+2. Separating user's input into sentences for processing in a chatbot
+3. Outputting each sentence from multiple texts as a list for natural language processing
+
+<Info>
+  You can utilize the text divided into sentences for various NLP tasks.
+</Info>

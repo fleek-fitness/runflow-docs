@@ -1,0 +1,35 @@
+---
+title: "YoutubeTranscriber"
+description: "YouTube 동영상에서 음성을 텍스트로 변환하는 노드"
+---
+### Node Input
+
+- `url` (string or string[]): The URL of the YouTube video. You can input one or multiple URLs either as a string or a list of strings.
+- `isAdvanced` (boolean, optional): Indicates whether to use advanced mode. Defaults to `False`.
+
+### Node Output
+
+- `transcription` (string or string[]): Text or a list of texts extracted from the video. This is the result of converting the video’s subtitles or audio to text using AI.
+
+### Functionality
+
+The YoutubeTranscriber node extracts audio from YouTube videos and converts it to text. In the basic mode, it retrieves YouTube subtitle data, whereas in advanced mode, it downloads the video audio and uses AI to convert it to text.
+
+### When to Use It?
+
+The YoutubeTranscriber node is handy in situations like:
+
+- Converting subtitles or audio from YouTube videos to text
+- Analyzing or summarizing video content
+- Transcribing audio from videos without subtitles
+- Utilizing audio data for text conversion in videos without subtitles via advanced mode
+
+### Examples
+
+1. Extract subtitles from lecture videos for use as study materials
+2. Convert audio from videos without subtitles into text to create a summary
+3. Turn YouTube video content into a blog post
+
+<Info>
+  For videos without subtitles, it’s recommended to use advanced mode to convert the audio to text.
+</Info>

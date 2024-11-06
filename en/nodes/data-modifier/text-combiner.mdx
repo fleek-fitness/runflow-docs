@@ -1,0 +1,24 @@
+---
+title: "TextCombiner"
+description: "두 개 이상의 텍스트를 결합하는 노드"
+---
+### Node Input
+
+- `input1` (optional, string or string[]): The first part of the text to be combined. You can input it as a single string or a list of strings.
+- `input2` (optional, string or string[]): The second part of the text to be combined. This can also be input as a single string or a list of strings.
+
+### Node Output
+
+- `combinedText` (string or string[]): The text resulting from the specified format combining the inputted text. It is returned as a single string or a list of strings.
+
+### Functionality
+
+The TextCombiner node takes two or more text inputs and generates text combined according to a user-defined format. The input values are inserted into the specified positions within the format, and any unspecified inputs are omitted.
+
+### When to Use?
+
+The TextCombiner node is useful in situations like:
+
+- Creating customized messages by combining multiple pieces of information
+- Generating reports or outputs formatted in a specific manner
+- Structuring and combining text for dynamic content generation in automated workflows

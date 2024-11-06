@@ -1,0 +1,84 @@
+---
+title: "Output"
+description: "Learn how to preview changes locally"
+---
+```
+// Make sure you have Node.js (version 19 or higher) installed before you proceed.
+
+Step 1. Install Mintlify on your operating system:
+```
+
+```bash npm
+npm i -g mintlify
+```
+1. </CodeGroup>
+
+Step 2. Head over to where the docs are located (where `mint.json` is) and execute the following command:
+```bash yarn
+yarn global add mintlify
+```
+The documentation website is now accessible at `http://localhost:3000`.
+
+### Custom Ports
+
+By default, Mintlify runs on port 3000. If you'd like to switch it up, just use the `--port` flag to set a different port. For instance, to run it on port 3333, use this command:
+```bash
+mintlify dev
+```
+You'll see an error like this if you try to run Mintlify on a port that's already in use:
+```bash
+mintlify dev --port 3333
+```
+```markdown
+## Mintlify Versions
+
+Every CLI is associated with a particular version of Mintlify. If your local site isn't matching the live version, consider updating your CLI.
+
+<CodeGroup>
+```
+```md
+Error: listen EADDRINUSE: address already in use :::3000
+```
+
+```bash npm
+npm i -g mintlify@latest
+```
+</CodeGroup>
+
+## Deployment
+
+<Tip>
+  Unlimited editors are available with the [Pro Plan](https://mintlify.com/pricing)
+  and higher.
+</Tip>
+
+If the deployment is successful, you should see this:
+
+<Frame>
+  <img src="/images/checks-passed.png" style={{ borderRadius: "0.5rem" }} />
+</Frame>
+
+## Troubleshooting
+
+Here’s how to tackle some common issues when using the CLI.
+
+<AccordionGroup>
+  <Accordion title="Mintlify isn't loading">
+    Update to Node v18. Run `mintlify install` and give it another shot.
+  </Accordion>
+  <Accordion title="No such file or directory on Windows">
+    Navigate to `C:/Users/Username/.mintlify/` and remove the `mint` folder. Then, open Git Bash there and run `git clone
+    https://github.com/mintlify/mint.git`. 
+
+    Try step 3 again.
+  </Accordion>
+  <Accordion title="Facing an unknown error">
+    Go to your device's root and delete the ~/.mintlify folder.
+    Then run `mintlify dev` once more.
+  </Accordion>
+</AccordionGroup>
+
+Wondering what's new in a CLI version? [Check out the CLI changelog.](/changelog/command-line)
+```bash yarn
+yarn global upgrade mintlify
+```

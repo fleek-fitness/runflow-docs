@@ -1,5 +1,6 @@
 {
   "$schema": "https://mintlify.com/schema.json",
+  "versions": ["English", "한국어"],
   "name": "런플로우 독스",
   "logo": {
     "dark": "/logo/logo.png",
@@ -50,41 +51,71 @@
   "navigation": [
     {
       "group": "시작하기",
-      "pages": ["introduction"]
+      "pages": ["ko/introduction"],
+      "version": "한국어"
     },
     {
+      "version": "한국어",
       "group": "노드",
       "pages": [
         {
           "group": "코어",
-          "pages": ["nodes/core/input", "nodes/core/output"]
+          "pages": ["ko/nodes/core/input", "ko/nodes/core/output"]
         },
         {
           "group": "데이터 로더",
           "pages": [
-            "nodes/data-loader/file-loader",
-            "nodes/data-loader/website-scraper",
-            "nodes/data-loader/youtube-transcriber"
+            "ko/nodes/data-loader/file-loader",
+            "ko/nodes/data-loader/website-scraper",
+            "ko/nodes/data-loader/youtube-transcriber"
           ]
         },
         {
           "group": "데이터 수정자",
-          "pages": [
-            "nodes/data-modifier/text-combiner",
-            "nodes/data-modifier/sentence-splitter"
-          ]
+          "pages": ["ko/nodes/data-modifier/text-combiner", "ko/nodes/data-modifier/sentence-splitter"]
         },
         {
           "group": "AI",
-          "pages": [
-            "nodes/ai/llm-caller",
-            "nodes/ai/translator",
-            "nodes/ai/data-extractor"
-          ]
+          "pages": ["ko/nodes/ai/llm-caller", "ko/nodes/ai/translator", "ko/nodes/ai/data-extractor"]
         },
         {
           "group": "데이터 작성자",
-          "pages": ["nodes/data-writer/google-sheet-writer"]
+          "pages": ["ko/nodes/data-writer/google-sheet-writer"]
+        }
+      ]
+    },
+    {
+      "group": "Get Started",
+      "pages": ["en/introduction"],
+      "version": "English"
+    },
+    {
+      "version": "English",
+      "group": "Nodes",
+      "pages": [
+        {
+          "group": "Core",
+          "pages": ["en/nodes/core/input", "en/nodes/core/output"]
+        },
+        {
+          "group": "Data Loader",
+          "pages": [
+            "en/nodes/data-loader/file-loader",
+            "en/nodes/data-loader/website-scraper",
+            "en/nodes/data-loader/youtube-transcriber"
+          ]
+        },
+        {
+          "group": "Data Modifier",
+          "pages": ["en/nodes/data-modifier/text-combiner", "en/nodes/data-modifier/sentence-splitter"]
+        },
+        {
+          "group": "AI",
+          "pages": ["en/nodes/ai/llm-caller", "en/nodes/ai/translator", "en/nodes/ai/data-extractor"]
+        },
+        {
+          "group": "Data Writer",
+          "pages": ["en/nodes/data-writer/google-sheet-writer"]
         }
       ]
     }

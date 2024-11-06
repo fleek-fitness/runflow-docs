@@ -1,0 +1,29 @@
+---
+title: "LLMCaller"
+description: "AI와 상호작용하여 응답을 생성하는 노드"
+---
+### Node Input
+
+- `prompt` (string or string[]): This is the question or task you want to ask the AI. You can input it as a string or a list of strings.
+- `context` (string or string[]): This provides additional information to the AI, helping it give more accurate responses based on this context.
+
+### Node Output
+
+- `response` (string or string[]): This is the AI's reply, generated based on the `prompt` you provided. It can come as a single response or multiple responses.
+
+### Function
+
+The LLMCaller node interacts with an AI model to produce replies based on the specified `prompt` and `context`. Users can pose questions or request specific tasks, and this node collects and returns the AI's responses.
+
+### When to Use It?
+
+The LLMCaller node is particularly useful in situations like:
+
+- Text generation tasks
+- Creating AI responses to user inquiries
+- Implementing interactive AI features in workflows
+- Automating interactions with AI in various scenarios
+
+<Info>
+  It's beneficial to provide an appropriate `prompt` and `context` together to enhance the quality of the AI’s responses.
+</Info>

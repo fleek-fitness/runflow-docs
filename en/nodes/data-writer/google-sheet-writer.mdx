@@ -1,0 +1,27 @@
+---
+title: "GoogleSheetWriter"
+description: "Google 스프레드시트에 데이터를 기록하는 노드"
+---
+### Node Input
+
+- `rowValue` (string or string[]): This represents the data that will be entered into each row of a spreadsheet. Multiple `rowValue` entries can be submitted, each being in the form of a single string or a list of strings. Each `rowValue` is logged into an individual row in the spreadsheet.
+
+### Node Output
+
+This node does not produce output, but instead performs the task of writing data to Google Sheets.
+
+### Functionality
+
+The GoogleSheetWriter node specializes in logging the provided data into a Google Sheet. Users are required to provide the URL of the spreadsheet and the sheet name, and the node will add data to that sheet. When multiple `rowValue` inputs are provided, each is written as a separate row in the spreadsheet. The node automates the process of setting up authentication and writing data to the spreadsheet using the Google API.
+
+### When to Use It?
+
+The GoogleSheetWriter node is particularly useful in situations like:
+
+- Storing survey results or log data in Google Sheets
+- Sharing and managing data with multiple users through Google Sheets
+- Keeping data in Google Sheets continuously updated automatically
+
+<Info>
+  This node simplifies tasks by automating data recording into Google Sheets through integration with the Google API.
+</Info>

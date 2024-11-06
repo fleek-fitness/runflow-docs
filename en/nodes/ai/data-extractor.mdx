@@ -1,0 +1,24 @@
+---
+title: "DataExtractor"
+description: "파일 또는 텍스트에서 구조화된 데이터를 추출하는 노드"
+---
+### Node Input
+
+- `file` (file or file[]): The file or list of files to be processed. Different processing is applied depending on the file type.
+- `text` (string or string[]): The text or list of texts to be processed. Used to extract information from text data.
+
+### Node Output
+
+- Extracted data (object or object[]): Information extracted from a file or text according to the set `schemas`. Each key includes a value extracted as defined in the schema and can be returned as a single object or a list of objects.
+
+### Functionality
+
+The DataExtractor node functions to extract structured data from files or text. It analyzes data based on the format defined in the schema and extracts needed information for return. If the file is in PDF format or an image, it processes the data in an appropriate manner, and it extracts information from text data according to the specified schema as well.
+
+### When to Use?
+
+The DataExtractor node is useful in the following scenarios:
+
+- When specific keywords, descriptions, registration numbers, etc., need to be extracted from documents
+- When automated data collection or document analysis is required
+- In scenarios where specific information needs to be found within large-scale data
