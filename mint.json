@@ -72,11 +72,18 @@
         },
         {
           "group": "데이터 수정자",
-          "pages": ["ko/nodes/data-modifier/text-combiner", "ko/nodes/data-modifier/sentence-splitter"]
+          "pages": [
+            "ko/nodes/data-modifier/text-combiner",
+            "ko/nodes/data-modifier/sentence-splitter"
+          ]
         },
         {
           "group": "AI",
-          "pages": ["ko/nodes/ai/llm-caller", "ko/nodes/ai/translator", "ko/nodes/ai/data-extractor"]
+          "pages": [
+            "ko/nodes/ai/llm-caller",
+            "ko/nodes/ai/translator",
+            "ko/nodes/ai/data-extractor"
+          ]
         },
         {
           "group": "데이터 작성자",
@@ -111,11 +118,18 @@
         },
         {
           "group": "Data Modifier",
-          "pages": ["en/nodes/data-modifier/text-combiner", "en/nodes/data-modifier/sentence-splitter"]
+          "pages": [
+            "en/nodes/data-modifier/text-combiner",
+            "en/nodes/data-modifier/sentence-splitter"
+          ]
         },
         {
           "group": "AI",
-          "pages": ["en/nodes/ai/llm-caller", "en/nodes/ai/translator", "en/nodes/ai/data-extractor"]
+          "pages": [
+            "en/nodes/ai/llm-caller",
+            "en/nodes/ai/translator",
+            "en/nodes/ai/data-extractor"
+          ]
         },
         {
           "group": "Data Writer",
@@ -129,9 +143,9 @@
     }
   ],
   "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://linkedin.com/company/mintlify"
+    "x": "https://x.com/runflowco",
+    "github": "https://github.com/runflowco",
+    "linkedin": "https://linkedin.com/company/runflowco"
   },
   "seo": {
     "indexHiddenPages": true
