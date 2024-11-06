@@ -1,7 +1,8 @@
 ---
 title: "FileLoader"
-description: "파일을 로컬 시스템에 다운로드하는 노드"
+description: “A Node that loads files to make them available to Runflow”
 ---
+
 ### Node Input
 
 - `file` (file or file[]): This represents the file or list of files you wish to load.
@@ -30,5 +31,6 @@ The FileLoader node is useful in the following scenarios:
 3. Automating the loading of large files before passing them to a specific node in the workflow
 
 <Info>
-  When using the FileLoader, keep in mind that the task might experience delays depending on network conditions and server response times, so plan your workflow accordingly.
+  When using the FileLoader, keep in mind that the task might experience delays depending on network conditions and
+  server response times, so plan your workflow accordingly.
 </Info>

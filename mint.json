@@ -80,7 +80,11 @@
         },
         {
           "group": "데이터 작성자",
-          "pages": ["ko/nodes/data-writer/google-sheet-writer"]
+          "pages": [
+            "ko/nodes/data-writer/google-sheet-writer",
+            "ko/nodes/data-writer/text-downloader",
+            "ko/nodes/data-writer/csv-xlsx-downloader"
+          ]
         }
       ]
     },
@@ -115,7 +119,11 @@
         },
         {
           "group": "Data Writer",
-          "pages": ["en/nodes/data-writer/google-sheet-writer"]
+          "pages": [
+            "en/nodes/data-writer/google-sheet-writer",
+            "en/nodes/data-writer/text-downloader",
+            "en/nodes/data-writer/csv-xlsx-downloader"
+          ]
         }
       ]
     }
