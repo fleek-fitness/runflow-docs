@@ -1,35 +1,30 @@
 ---
 title: "YoutubeTranscriber"
-description: “A node that converts speech to text from YouTube videos”
+description: "A node that retrieves and transcribes audio from YouTube videos"
 ---
+
 ### Node Input
 
-- `url` (string or string[]): The URL of the YouTube video. You can input one or multiple URLs either as a string or a list of strings.
-- `isAdvanced` (boolean, optional): Indicates whether to use advanced mode. Defaults to `False`.
+- `url` (string or string[]): The URL of the YouTube video to be transcribed. Accepts a single URL string or a list of URLs.
+- `is_advanced` (boolean, optional): When set to true, enables advanced transcription mode, which includes downloading and processing the audio for higher quality transcription.
 
 ### Node Output
 
-- `transcription` (string or string[]): Text or a list of texts extracted from the video. This is the result of converting the video’s subtitles or audio to text using AI.
+- `transcription` (string or string[]): The transcribed text of the video content. If multiple URLs are provided, the output includes a list of transcriptions corresponding to each URL.
 
-### Functionality
+### Function
 
-The YoutubeTranscriber node extracts audio from YouTube videos and converts it to text. In the basic mode, it retrieves YouTube subtitle data, whereas in advanced mode, it downloads the video audio and uses AI to convert it to text.
+The YoutubeTranscriber node retrieves and transcribes audio from specified YouTube videos. When `is_advanced` is enabled, the node processes the audio locally to enhance transcription quality. In basic mode, it uses YouTube’s auto-generated captions where available.
 
 ### When to Use It?
 
-The YoutubeTranscriber node is handy in situations like:
+The YoutubeTranscriber node is useful for:
 
-- Converting subtitles or audio from YouTube videos to text
-- Analyzing or summarizing video content
-- Transcribing audio from videos without subtitles
-- Utilizing audio data for text conversion in videos without subtitles via advanced mode
-
-### Examples
-
-1. Extract subtitles from lecture videos for use as study materials
-2. Convert audio from videos without subtitles into text to create a summary
-3. Turn YouTube video content into a blog post
+- Extracting text from spoken content in YouTube videos
+- Converting video content into text for analysis or summarization
+- Integrating transcriptions into text-based workflows
 
 <Info>
-  For videos without subtitles, it’s recommended to use advanced mode to convert the audio to text.
+  Enabling `is_advanced` can improve transcription accuracy but may increase
+  processing time. Use it for videos requiring precise transcription.
 </Info>

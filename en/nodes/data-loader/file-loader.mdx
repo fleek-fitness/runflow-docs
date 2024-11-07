@@ -1,36 +1,25 @@
 ---
 title: "FileLoader"
-description: “A Node that loads files to make them available to Runflow”
+description: "A node that automates downloading files from specified URLs"
 ---
 
 ### Node Input
 
-- `file` (file or file[]): This represents the file or list of files you wish to load.
+- `file`: A list of files to be loaded, each containing details like the file path and download URL.
 
 ### Node Output
 
-- `file` (file or file[]): This includes the successfully loaded file or list of files.
+- `file`: The loaded file or list of files, based on the input configuration.
 
-### Functionality
+### Function
 
-The FileLoader node is responsible for downloading specified files and saving them to a local system. It automatically retrieves files using URLs provided in the input and saves them to the local path. The node can handle a single file or multiple files simultaneously and executes parallel file downloads within set concurrency limits.
+The FileLoader node is built to load files from designated URLs. It downloads each file to a specified local path, managing multiple files with concurrent downloads if needed. This node streamlines file retrieval and storage, simplifying the integration of file downloads within automation workflows.
 
-### When to Use
+### When to Use It?
 
-The FileLoader node is useful in the following scenarios:
-
-- When you need to download files from a remote server
-- When you need to fetch external resources in a workflow
-- When you need to process large volumes of files automatically
-- When you need to handle many files simultaneously or automate large-scale file loading tasks
-
-### Examples
-
-1. Periodically downloading resources provided by an external API and saving them locally
-2. Collecting distributed data from multiple servers and integrating it into a local environment
-3. Automating the loading of large files before passing them to a specific node in the workflow
+The FileLoader node is particularly useful when automating the download of one or more files from specified URLs. Use this node for workflows that need to incorporate external data sources, perform file synchronization, or automate data retrieval from remote servers.
 
 <Info>
-  When using the FileLoader, keep in mind that the task might experience delays depending on network conditions and
-  server response times, so plan your workflow accordingly.
+  Ensure that the URLs provided are accessible and valid to avoid download
+  interruptions.
 </Info>

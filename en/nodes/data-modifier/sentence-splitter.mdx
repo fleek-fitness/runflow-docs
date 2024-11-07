@@ -1,33 +1,30 @@
 ---
 title: "SentenceSplitter"
-description: “A node that separates text into sentences”
+description: "A node that splits text content into individual sentences for sentence-level processing."
 ---
+
 ### Node Input
 
-- `content` (string or string[]): The text or list of texts to be split into sentences. You can input in the form of a string or a list of strings.
+- `content` (string or string[]): The text content to be split into sentences. It can be a single text string or a list of text strings.
 
 ### Node Output
 
-- `sentences` (string[] or string[][]): The result of splitting the input `content` into sentences. If a single text is input, it is returned as a list of sentences, and if multiple texts are input, it is returned as a list of sentence lists for each text.
+- `sentences` (string[]): A list of sentences resulting from splitting the provided `content`. Each item in this list represents an individual sentence.
 
 ### Function
 
-The SentenceSplitter node is responsible for splitting the input text into sentences. It divides the given text based on punctuation marks and is capable of processing multiple texts simultaneously. Each sentence is returned neatly by removing delimiters such as spaces or symbols used for separation.
+The SentenceSplitter node processes the provided text content (`content`) and splits it into individual sentences. It uses a regex-based approach to identify sentence boundaries, ensuring accurate splitting across various punctuation marks and text patterns. This node helps in breaking down larger blocks of text into manageable sentence-level components.
 
-### When to Use?
+### When to Use It?
 
-The SentenceSplitter node is useful in the following situations:
+The SentenceSplitter node is ideal for:
 
-- When you need to split long texts into multiple sentences for analysis or processing
-- When data needs to be broken down into sentences in a natural language processing workflow
-- When separating sentences in interactive AI systems to perform individual tasks
-
-### Examples
-
-1. Splitting a long article or document into multiple sentences for text analysis
-2. Separating user's input into sentences for processing in a chatbot
-3. Outputting each sentence from multiple texts as a list for natural language processing
+- Dividing long text into individual sentences
+- Preparing content for text analysis
+- Assisting in summarization tasks
+- Any scenario requiring sentence-level granularity for further processing
 
 <Info>
-  You can utilize the text divided into sentences for various NLP tasks.
+  This node is particularly useful when you need to manage or analyze text
+  content at the sentence level.
 </Info>

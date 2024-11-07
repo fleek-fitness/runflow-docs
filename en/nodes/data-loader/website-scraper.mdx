@@ -1,29 +1,30 @@
 ---
 title: "WebsiteScraper"
-description: “A node that automatically scrapes content from a website”
+description: "A node that extracts structured content from websites"
 ---
+
 ### Node Input
 
-- `url` (string or string[]): The URL of the website to be scraped. Can be a single URL or provided as a list of URLs.
+- `url` (string or string[]): The URL of the website to scrape. It can be a single URL string or a list of URLs, depending on the use case.
 
 ### Node Output
 
-- `content` (string or string[]): The content collected from the website. It will be returned as a single string or a list of strings.
+- `content` (string): The scraped content of the website in markdown format, based on the provided URL.
 
-### Functionality
+### Function
 
-The WebsiteScraper node automatically scrapes content from the website at the specified URL(s). This allows users to gather and utilize the website's text content for various purposes. It employs AI-based scraping tools and strategies to collect and deliver data.
+The WebsiteScraper node is designed to extract content from specified websites. It navigates to the provided URL(s), optionally executing JavaScript if required, and retrieves the site's content as markdown. This node can handle both general websites and specific formats, such as LinkedIn profiles, by applying relevant scraping strategies.
 
-### When to Use?
+### When to Use It?
 
-The WebsiteScraper node is particularly useful in situations such as:
+The WebsiteScraper node is especially useful in cases such as:
 
-- When you need to collect the contents of specific web pages like news articles, product information, or blog posts
-- When large-scale data collection or routine web content scraping is required
-- When your workflow demands automated web crawling
+- Extracting structured content from profiles, news articles, or product pages
+- Gathering text-based data for further analysis
+- Automating web content extraction within workflows
 
-### Examples
-
-1. Automatically gather blog post content and store it in a database
-2. Crawl product descriptions from a particular website for market research purposes
-3. Automatically collect the latest articles from a news site for summarization tasks
+<Info>
+  For best results, ensure the `url` provided is specific to the content you
+  want to extract. The node can handle both single and multiple URLs for
+  flexible usage.
+</Info>

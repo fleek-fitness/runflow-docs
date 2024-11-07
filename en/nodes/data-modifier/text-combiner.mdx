@@ -1,24 +1,24 @@
 ---
 title: "TextCombiner"
-description: “A node that combines two or more texts”
+description: "A node that combines multiple text inputs into a single formatted output"
 ---
+
 ### Node Input
 
-- `input1` (optional, string or string[]): The first part of the text to be combined. You can input it as a single string or a list of strings.
-- `input2` (optional, string or string[]): The second part of the text to be combined. This can also be input as a single string or a list of strings.
+- `input1`, `input2`, ...: Individual input text values to be combined. Each input is named in the format `input1`, `input2`, etc., and corresponds to different parts of the text that will be merged according to the specified format.
 
 ### Node Output
 
-- `combinedText` (string or string[]): The text resulting from the specified format combining the inputted text. It is returned as a single string or a list of strings.
+- `combined_text`: The final text result created by combining the inputs according to the specified format.
 
-### Functionality
+### Function
 
-The TextCombiner node takes two or more text inputs and generates text combined according to a user-defined format. The input values are inserted into the specified positions within the format, and any unspecified inputs are omitted.
+The TextCombiner node takes multiple text inputs and combines them into a single formatted output string. The combination format is specified by the user and can include placeholders like `{input1}`, `{input2}`, etc., to indicate where each input should be inserted within the final text.
 
-### When to Use?
+### When to Use It?
 
-The TextCombiner node is useful in situations like:
+The TextCombiner node is particularly useful when:
 
-- Creating customized messages by combining multiple pieces of information
-- Generating reports or outputs formatted in a specific manner
-- Structuring and combining text for dynamic content generation in automated workflows
+- Creating standardized messages
+- Formatting reports with multiple text inputs
+- Merging inputs into a cohesive output for structured formats

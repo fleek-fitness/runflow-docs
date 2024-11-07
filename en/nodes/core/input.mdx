@@ -1,46 +1,28 @@
 ---
-title: "Input"
-description: "Receive data into your flow"
+title: "InputNode"
+description: "A node that returns a user-defined input value for use in workflows."
 ---
-### Node Inputs
 
-The Input node is where your flow begins, letting you take in data from a variety of sources.
+### Node Input
 
-#### Node Outputs
+- `value` (string): A text or string value defined by the user, which the node will return.
 
-- `input` (any): This can be any type of data coming from the Input node, determined by the source.
+### Node Output
 
-### Node Functionality
+- `output` (string): Outputs the provided `value` exactly as it was input by the user.
 
-The Input node acts as the gateway for bringing data into your flow. It can take in information from several origins, such as:
+### Function
 
-- User inputs
-- API calls
-- Database queries
-- File uploads
-- Webhook payloads
-- Scheduled events
+The InputNode simply returns the user-provided value. It takes the input `value` and makes it available for reference by other nodes in the workflow. This node is ideal for passing predefined data that can be used across the workflow.
 
-Once received, this data is ready for further actions in the subsequent nodes of your flow.
+### When to Use It?
 
-### When To Use
+The InputNode is useful when you need to pass a user-defined input to other nodes. It’s particularly helpful for:
 
-You should use the Input node when you need to:
-
-- Kick off a flow with data from outside sources
-- Activate a flow based on particular events or criteria
-- Collect user inputs or handle API requests
-- Bring external data into your workflow for processing
-
-### Examples
-
-Some scenarios where you might use the Input node include:
-
-1. Gathering user input through a chat interface
-2. Processing webhook payloads to automate workflows
-3. Bringing in data from a CSV file for flow processing
-4. Starting a flow triggered by a scheduled event
+- Setting an initial input value
+- Transferring specific data to other processes within a workflow
 
 <Info>
-  The specific settings for configuring the Input node will depend on your platform and the type of input you're dealing with.
+  Use this node to initialize or propagate values across multiple nodes in your
+  workflow.
 </Info>

@@ -1,29 +1,31 @@
 ---
 title: "LLMCaller"
-description: “A node that interacts with AI to generate responses”
+description: "A node that interacts with AI to generate responses"
 ---
+
 ### Node Input
 
-- `prompt` (string or string[]): This is the question or task you want to ask the AI. You can input it as a string or a list of strings.
-- `context` (string or string[]): This provides additional information to the AI, helping it give more accurate responses based on this context.
+- `prompt` (string or string[]): The main message to be sent to the AI. This can be a single text input or a list of texts, serving as the specific question or command you want the AI to address.
+- `context` (string or string[]): Provides additional background information to help the AI understand the situation for a more relevant response. It can also be a single text input or a list.
 
 ### Node Output
 
-- `response` (string or string[]): This is the AI's reply, generated based on the `prompt` you provided. It can come as a single response or multiple responses.
+- `response` (string or string[]): The AI-generated response based on the given `prompt`. This output matches the input prompt structure, providing a specific answer or response.
 
 ### Function
 
-The LLMCaller node interacts with an AI model to produce replies based on the specified `prompt` and `context`. Users can pose questions or request specific tasks, and this node collects and returns the AI's responses.
+The LLMCaller node connects to an AI model using the input prompt and context to generate an AI response. The node ensures the model receives any necessary background information, improving the relevance of the response. It allows handling of single or multiple prompts, depending on user needs, and returns precise responses.
 
 ### When to Use It?
 
-The LLMCaller node is particularly useful in situations like:
+The LLMCaller node is ideal for scenarios like:
 
-- Text generation tasks
-- Creating AI responses to user inquiries
-- Implementing interactive AI features in workflows
-- Automating interactions with AI in various scenarios
+- Customer support inquiries
+- Focused data extractions
+- Automated workflows requiring single or batch AI responses
+- Any task where precise output is needed from specific prompts and context
 
 <Info>
-  It's beneficial to provide an appropriate `prompt` and `context` together to enhance the quality of the AI’s responses.
+  Providing the appropriate `prompt` and `context` together enhances the
+  relevance and accuracy of the AI’s responses.
 </Info>

@@ -1,28 +1,21 @@
 ---
-title: "CsvXlsxDownloader"
-description: “A node that stores data locally as CSV or XLSX files”
+title: "CSVXLSXDownloader"
+description: "A node that creates and downloads a CSV or XLSX file with specified headers and file name."
 ---
+
 ### Node Input
 
-- `field 1` (string): Data for the first field.
-- `field 2` (string): Data for the second field.
+- `headers`: Defines the columns for the downloaded file, where each entry specifies a column name and data type.
+- `file_name`: The name assigned to the downloaded file.
 
 ### Node Output
 
-This node does not generate output; instead, it saves the input data locally in a CSV or XLSX file.
+- This node does not produce direct output data fields, as its primary function is file download.
 
-### Functionality
+### Function
 
-The CsvXlsxDownloader node creates files in CSV and XLSX formats based on the input data and stores them locally under a specified filename. Users can set the filename and input multiple fields to use each field as a column in the file. This node automates the data-saving process, saving time that would be spent manually saving data to files.
+The CSVXLSXDownloader Node creates and downloads a CSV or XLSX file based on the specified headers and file name. This allows for consistent formatting and naming of downloaded files within workflows.
 
-### When to Use?
+### When to Use It?
 
-The CsvXlsxDownloader node is useful in situations like:
-
-- When you need to export process-generated data as a CSV or XLSX file for storage
-- When you want to save data to a file for data analysis or reporting
-- When an automated workflow requires inclusion of a data-saving step
-
-<Info>
-  This node facilitates data management and sharing by saving input data as CSV or XLSX files.
-</Info>
+Use this node when you need to export data into a CSV or XLSX file with specific headers. It is especially useful for tasks involving data reporting, sharing structured information, or saving data in a structured format.

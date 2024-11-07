@@ -1,35 +1,30 @@
 ---
-title: "Translator"
-description: “A node that translates text into another language”
+title: "Translator Node"
+description: “A node that translates text content into a specified target language.”
 ---
+
 ### Node Input
 
-- `content` (string or string[]): This is the text to be translated. It can be provided as a single string or a list of strings.
-- `targetLanguage` (string): This is the code of the language into which you want to translate. For example, 'en' for English and 'ko' for Korean.
+- `content` (string or string[]): The text content to be translated. This can be a single string or a list of strings.
+- `targetLanguage` (string): The language code (e.g., "es" for Spanish, "fr" for French) indicating the desired target language for translation.
 
 ### Node Output
 
-- `text` (string or string[]): This is the translated text. It's the result of converting the input `content` into the `targetLanguage`. It can be returned as a single text or multiple texts.
+- `text` (string or string[]): The translated text in the target language. If a list of `content` strings was provided, this will be a corresponding list of translated strings.
 
-### Features
+### Function
 
-The Translator node takes provided text and translates it into the user-specified language. You provide the text to be translated (`content`) and the target language (`targetLanguage`), and the node returns the accurately translated text in the specified language. It operates asynchronously, allowing multiple texts to be processed simultaneously.
+The Translator Node takes a specified piece of text (`content`) and translates it into a target language (`targetLanguage`). This node utilizes an AI model to provide high-quality translations and supports various languages through the provided language codes.
 
-### When To Use It?
+### When to Use It?
 
-The Translator node is particularly useful in the following scenarios:
+Use the Translator Node when you need to translate text content from one language to another. It is suitable for tasks like:
 
-- When a workflow requires multilingual support
-- When users need to convert information provided in multiple languages into one specific language
-- When automating multilingual translation tasks
-- In any scenario where translation service is needed
-
-### Examples
-
-1. Translating user messages into the service language in a customer support chatbot
-2. Translating articles from a multilingual news feed into a specific language
-3. Converting multilingual product descriptions into a single language
+- Multi-language content generation
+- Customer support localization
+- Dynamic language translation in diverse scenarios
 
 <Info>
-  For accurate translations, it is recommended to integrate this with a reliable translation API or service.
+  Ensure that the `targetLanguage` code is valid and corresponds to the intended
+  language for an accurate translation.
 </Info>
