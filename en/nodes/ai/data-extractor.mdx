@@ -1,24 +1,32 @@
 ---
 title: "DataExtractor"
-description: “Node for extracting structured data from files or text”
+description: "A node that extracts structured data from unstructured sources like text or files"
 ---
+
 ### Node Input
 
-- `file` (file or file[]): The file or list of files to be processed. Different processing is applied depending on the file type.
-- `text` (string or string[]): The text or list of texts to be processed. Used to extract information from text data.
+- `file` (file or file[]): File input for data extraction, which can be a single file or a list of files. This field is relevant when `input_type` is set to "file."
+- `text` (string or string[]): Text input for data extraction, which can be a single text string or a list of text strings. This field is relevant when `input_type` is set to "text."
 
 ### Node Output
 
-- Extracted data (object or object[]): Information extracted from a file or text according to the set `schemas`. Each key includes a value extracted as defined in the schema and can be returned as a single object or a list of objects.
+- The output structure is dynamically created based on the `schemas` defined in the node’s properties. Each schema item becomes an output key, named accordingly. The data types in the output match those specified in the `schemas`.
 
-### Functionality
+### Function
 
-The DataExtractor node functions to extract structured data from files or text. It analyzes data based on the format defined in the schema and extracts needed information for return. If the file is in PDF format or an image, it processes the data in an appropriate manner, and it extracts information from text data according to the specified schema as well.
+The DataExtractor node is designed to extract specific data fields from either text or file inputs according to a defined schema. This schema allows customization of which data elements to extract and their respective formats. The node can handle both single and multiple inputs, supporting extraction in various formats, including string, integer, and boolean.
 
-### When to Use?
+### When to Use It?
 
-The DataExtractor node is useful in the following scenarios:
+The DataExtractor node is particularly useful in scenarios such as:
 
-- When specific keywords, descriptions, registration numbers, etc., need to be extracted from documents
-- When automated data collection or document analysis is required
-- In scenarios where specific information needs to be found within large-scale data
+- Extracting structured data from unstructured text or file inputs
+- Pulling keywords, summaries, or specific data fields from documents
+- Processing data for further use in automated workflows
+- Handling single or batch data extraction tasks
+
+<Info>
+  This node works best when the `schemas` are well-defined, as each schema item
+  specifies an output key and data type, improving the accuracy and relevance of
+  the extracted data.
+</Info>
