@@ -1,16 +1,16 @@
 {
   "$schema": "https://mintlify.com/schema.json",
   "versions": ["English", "한국어"],
-  "name": "런플로우 독스",
+  "name": "Runflow Docs",
   "logo": {
-    "dark": "/logo/logo.png",
-    "light": "/logo/logo.png"
+    "dark": "/images/logo.png",
+    "light": "/images/logo.png"
   },
   "modeToggle": {
     "default": "light",
     "isHidden": true
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/images/favicon-32x32.png",
   "colors": {
     "primary": "#3b82f6",
     "light": "#2563eb",
@@ -22,79 +22,23 @@
   },
   "topbarLinks": [
     {
-      "name": "오픈채팅",
-      "url": "https://open.kakao.com/o/g9A8oSUg"
+      "name": "Discord",
+      "url": "https://discord.gg/MTCVXUS95D"
     }
   ],
   "topbarCtaButton": {
-    "name": "시작하기",
+    "name": "Get Started",
     "url": "https://www.runflow.co/dashboard"
   },
   "tabs": [],
   "anchors": [
     {
-      "name": "오픈채팅",
-      "icon": "comment",
-      "url": "https://open.kakao.com/o/g9A8oSUg"
-    },
-    {
-      "name": "블로그",
-      "icon": "newspaper",
-      "url": "https://blog.runflow.co"
-    },
-    {
-      "name": "튜토리얼",
-      "icon": "youtube",
-      "url": "https://www.youtube.com/@runflowco"
+      "name": "Discord",
+      "icon": "discord",
+      "url": "https://discord.gg/MTCVXUS95D"
     }
   ],
   "navigation": [
-    {
-      "group": "시작하기",
-      "pages": ["ko/introduction"],
-      "version": "한국어"
-    },
-    {
-      "version": "한국어",
-      "group": "노드",
-      "pages": [
-        {
-          "group": "코어",
-          "pages": ["ko/nodes/core/input", "ko/nodes/core/output"]
-        },
-        {
-          "group": "데이터 로더",
-          "pages": [
-            "ko/nodes/data-loader/file-loader",
-            "ko/nodes/data-loader/website-scraper",
-            "ko/nodes/data-loader/youtube-transcriber"
-          ]
-        },
-        {
-          "group": "데이터 수정자",
-          "pages": [
-            "ko/nodes/data-modifier/text-combiner",
-            "ko/nodes/data-modifier/sentence-splitter"
-          ]
-        },
-        {
-          "group": "AI",
-          "pages": [
-            "ko/nodes/ai/llm-caller",
-            "ko/nodes/ai/translator",
-            "ko/nodes/ai/data-extractor"
-          ]
-        },
-        {
-          "group": "데이터 작성자",
-          "pages": [
-            "ko/nodes/data-writer/google-sheet-writer",
-            "ko/nodes/data-writer/text-downloader",
-            "ko/nodes/data-writer/csv-xlsx-downloader"
-          ]
-        }
-      ]
-    },
     {
       "group": "Get Started",
       "pages": ["en/introduction"],
@@ -140,12 +84,56 @@
           ]
         }
       ]
+    },
+    {
+      "group": "시작하기",
+      "pages": ["ko/introduction"],
+      "version": "한국어"
+    },
+    {
+      "version": "한국어",
+      "group": "노드",
+      "pages": [
+        {
+          "group": "코어",
+          "pages": ["ko/nodes/core/input", "ko/nodes/core/output"]
+        },
+        {
+          "group": "데이터 로더",
+          "pages": [
+            "ko/nodes/data-loader/file-loader",
+            "ko/nodes/data-loader/website-scraper",
+            "ko/nodes/data-loader/youtube-transcriber"
+          ]
+        },
+        {
+          "group": "데이터 수정자",
+          "pages": [
+            "ko/nodes/data-modifier/text-combiner",
+            "ko/nodes/data-modifier/sentence-splitter"
+          ]
+        },
+        {
+          "group": "AI",
+          "pages": [
+            "ko/nodes/ai/llm-caller",
+            "ko/nodes/ai/translator",
+            "ko/nodes/ai/data-extractor"
+          ]
+        },
+        {
+          "group": "데이터 작성자",
+          "pages": [
+            "ko/nodes/data-writer/google-sheet-writer",
+            "ko/nodes/data-writer/text-downloader",
+            "ko/nodes/data-writer/csv-xlsx-downloader"
+          ]
+        }
+      ]
     }
   ],
   "footerSocials": {
-    "x": "https://x.com/runflowco",
-    "github": "https://github.com/runflowco",
-    "linkedin": "https://linkedin.com/company/runflowco"
+    "discord": "https://discord.gg/MTCVXUS95D"
   },
   "seo": {
     "indexHiddenPages": true
