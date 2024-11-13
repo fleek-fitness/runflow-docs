@@ -1,0 +1,29 @@
+---
+title: "Video Caption Generator"
+description: "Generate a video caption and add it to a video clip."
+---
+### Node Input
+
+- `file` (FileType or FileType[]): The video file for which subtitles will be generated. Provided as a `FileType` object, and can be input as a single item or a list.
+- `template_id` (string): The template ID to use for subtitle generation. The default is `07ffd4b8-4e1a-4ee3-8921-d58802953bcd`.
+- `language` (string): Specifies the subtitle language. The default is English (`en`).
+- `auto_approve` (boolean): Sets whether to automatically approve the generated subtitles. The default is `True`.
+
+### Node Output
+
+- `video` (FileType): The video file with subtitles added. Provided as a `FileType` object, including URL and file name.
+- `video_url` (string): The download URL of the video with subtitles.
+
+### Functionality
+
+The VideoCaptionGenerator node offers the function to automatically add template-based subtitles to the input video file. Users can choose subtitle style and language through the template ID and language settings. Once subtitles are generated, they are applied and saved to the video file, with the URL of the generated video outputted.
+
+### When to Use?
+
+The VideoCaptionGenerator node is useful in the following situations:
+
+- To automatically add subtitles to video content to enhance accessibility
+- To create multilingual content by adding subtitles in various languages
+- To produce consistent style subtitles using a uniform template
+
+VideoCaptionGenerator is a simple workflow node for automating video subtitling, saving time and effort in video editing.

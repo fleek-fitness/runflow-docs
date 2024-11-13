@@ -1,0 +1,29 @@
+---
+title: "Gmail Sender"
+description: "Send an email using your Google's Gmail account. You can send text or HTML formatted emails."
+---
+### Node Input
+
+- `recipient_email` (string or string[]): (Required) This is the email address of the recipient. It can be input as a single string or a list of email addresses.
+- `sender_email` (string): This is the email address of the sender. If there's a pre-configured default, you can omit this input.
+- `subject` (string or string[]): This is the subject of the email. It can be input as a single string or a list of subjects.
+- `content` (string or string[]): This is the body of the email. It can be formatted in HTML and can be input as a single string or a list of content.
+
+### Node Output
+
+- Returns whether the email was successfully sent or if an email draft was saved.
+
+### Functionality
+
+The GmailSender node provides the ability to send emails to specified recipients via the Gmail API or to save the email as a draft upon request. By setting the sender and recipient's email addresses, subject, and body content, the email is either sent or saved as a draft through the Gmail API.
+
+### When to Use
+
+The GmailSender node is particularly useful in the following situations:
+
+- When there is a need to send emails in an automated workflow
+- When sending the same email content to multiple recipients at once or individually
+- When there are multiple recipients, allowing for parallel email distribution to improve efficiency
+- When temporarily saving emails to review and send later
+
+The GmailSender node offers a simple and efficient means of sending emails necessary for automated email workflows.

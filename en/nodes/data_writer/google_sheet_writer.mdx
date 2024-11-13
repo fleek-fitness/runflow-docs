@@ -1,0 +1,29 @@
+---
+title: "Google Sheet Writer"
+description: "Write the content to a Google Sheets file given a list of data to put in each column. Note: Your Google Sheet must have column headers."
+---
+
+### Node Input
+
+- `headers` (dictionary): Defines the structure of columns in the Google Sheet. Each key corresponds to a field, and each value includes a `label` representing the column name.
+- `spreadsheetUrl` (string): The URL of the Google Spreadsheet where data will be written.
+- `spreadsheetId` (string): The ID of the Google Spreadsheet.
+- `spreadsheetName` (string): The name of the spreadsheet.
+- `sheetName` (string): The specific sheet within the spreadsheet where data will be inserted.
+- `userEmail` (string): The email address of the Google account authorized to access the spreadsheet.
+
+### Node Output
+
+This node completes without returning a specific output value, confirming that data was successfully added to the specified Google Sheet.
+
+### Function
+
+The GoogleSheetWriter node writes data to a designated Google Sheet according to the column headers and structure specified in the `headers` input. It authenticates using OAuth2 to obtain access tokens, then uses these credentials to add rows to the sheet. Each header’s label serves as a column name, with the corresponding values acting as data to be inserted. This node supports automated data entry, facilitating both single-row and multi-row data insertion.
+
+### When to Use It?
+
+The GoogleSheetWriter node is particularly useful for:
+
+- Automating data entry into Google Sheets
+- Updating records or adding new entries
+- Logging data in a structured format within specific sheets

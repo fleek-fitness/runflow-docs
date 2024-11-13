@@ -1,0 +1,31 @@
+---
+title: "AI Data Extractor"
+description: "Extract key pieces of information or a list of information from the provided text or file."
+---
+
+### Node Input
+
+- `file` (file or file[]): File input for data extraction, which can be a single file or a list of files. This field is relevant when `input_type` is set to "file."
+- `text` (string or string[]): Text input for data extraction, which can be a single text string or a list of text strings. This field is relevant when `input_type` is set to "text."
+
+### Node Output
+
+- The output structure is dynamically created based on the `schemas` defined in the node’s properties. Each schema item becomes an output key, named accordingly. The data types in the output match those specified in the `schemas`.
+
+### Function
+
+The DataExtractor node is designed to extract specific data fields from either text or file inputs according to a defined schema. This schema allows customization of which data elements to extract and their respective formats. The node can handle both single and multiple inputs, supporting extraction in various formats, including string, integer, and boolean.
+
+### When to Use It?
+
+The DataExtractor node is particularly useful in scenarios such as:
+
+- Extracting structured data from unstructured text or file inputs
+- Pulling keywords, summaries, or specific data fields from documents
+- Processing data for further use in automated workflows
+- Handling single or batch data extraction tasks
+
+<Info>
+  This node works best when the `schemas` are well-defined, as each schema item specifies an output key and data type,
+  improving the accuracy and relevance of the extracted data.
+</Info>

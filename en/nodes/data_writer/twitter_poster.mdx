@@ -1,0 +1,22 @@
+---
+title: "X Poster"
+description: "Post text content to X (formerly Twitter) using your connected X account."
+---
+### Node Input
+
+- `content` (string): The tweet's content. Provided as a string.
+- `mediaUrls` (string[]): List of URLs of media files to attach to the tweet. Each URL is optional and can include image or video files.
+- `twitterUsername` (string): The username of the Twitter account where the tweet will be posted.
+
+### Node Output
+
+- `tweetId` (string): The unique ID of the posted tweet.
+- `tweetUrl` (string): The URL of the posted tweet.
+
+### Functionality
+
+The Twitter Poster node posts a tweet on Twitter based on the given input. It can include text and media files, and upon successful posting, it returns the ID and URL of the tweet. This node interacts with the Twitter API to post the tweet via OAuth authentication.
+
+### When to Use?
+
+This node is useful in automated workflows where you need to make posts on Twitter. For example, it can be used in a marketing campaign to regularly post tweets or provide real-time updates for a specific event. It allows tweeting programmatically without direct access to the Twitter account, improving efficiency.

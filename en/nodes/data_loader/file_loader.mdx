@@ -1,0 +1,22 @@
+---
+title: "File Loader"
+description: "Upload a file from local storage."
+---
+
+### Node Input
+
+- `file`: A list of files to be loaded, each containing details like the file path and download URL.
+
+### Node Output
+
+- `file`: The loaded file or list of files, based on the input configuration.
+
+### Function
+
+The FileLoader node is built to load files from designated URLs. It downloads each file to a specified local path, managing multiple files with concurrent downloads if needed. This node streamlines file retrieval and storage, simplifying the integration of file downloads within automation workflows.
+
+### When to Use It?
+
+The FileLoader node is particularly useful when automating the download of one or more files from specified URLs. Use this node for workflows that need to incorporate external data sources, perform file synchronization, or automate data retrieval from remote servers.
+
+<Info>Ensure that the URLs provided are accessible and valid to avoid download interruptions.</Info>

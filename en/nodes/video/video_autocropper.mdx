@@ -1,0 +1,28 @@
+---
+title: "Video Autocropper"
+description: "Smart, automatic cropping of a video to a given aspect ratio by detecting and tracking subjects and speakers."
+---
+
+### Node Input
+
+- `file` (FileType or FileType[]): Specify the video file to be auto-cropped. You can provide a `FileType` object containing the URL of the video file as a single item or a list.
+- `aspect_ratio` (string): Set the desired crop ratio. Supported ratios are `1:1`, `4:3`, `3:4`, `4:5`, `5:4`, `9:16`, with the default being `9:16`.
+- `active_speaker_detection` (boolean): Determine whether to use the active speaker detection feature to focus on the main speaker when cropping the video. The default is `True`.
+
+### Node Output
+
+- `cropped_video` (FileType[]): Video files cropped based on the set crop ratio and active speaker detection settings. Each video is provided as a `FileType` object, including the URL and file name.
+
+### Functionality
+
+The VideoAutocropper node offers the ability to automatically crop input videos to a specified screen ratio. Additionally, it adjusts the frame to ensure the main speaker is well-fitted using active speaker detection. The cropped videos are generated to fit the specified ratio, and video files can be processed in parallel to enhance task efficiency.
+
+### When to Use?
+
+The VideoAutocropper node is useful in the following situations:
+
+- When you need vertical or specific ratio video clips suitable for social media
+- When you require crop videos focused on the main speaker from meeting recordings or presentation videos
+- When you need to quickly auto-crop various video sources to generate content in multiple formats
+
+VideoAutocropper is a valuable tool for quickly editing key scenes into specific ratios within a video automation workflow.

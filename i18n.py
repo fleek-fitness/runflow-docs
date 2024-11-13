@@ -119,7 +119,7 @@ def process_mdx_files(source_dir="."):
     print("MDX 파일 번역 프로세스를 시작합니다...")
 
     # 대상 언어 설정
-    languages = ["en", "ko"]
+    languages = ["en"]
 
     # 대상 파일 지정
     target_files = []

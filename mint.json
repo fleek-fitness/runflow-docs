@@ -55,32 +55,45 @@
         {
           "group": "Data Loader",
           "pages": [
-            "en/nodes/data-loader/file-loader",
-            "en/nodes/data-loader/website-scraper",
-            "en/nodes/data-loader/youtube-transcriber"
+            "en/nodes/data_loader/file_loader",
+            "en/nodes/data_loader/google_maps_scraper",
+            "en/nodes/data_loader/website_scraper",
+            "en/nodes/data_loader/youtube_downloader",
+            "en/nodes/data_loader/youtube_transcriber"
           ]
         },
         {
           "group": "Data Modifier",
-          "pages": [
-            "en/nodes/data-modifier/text-combiner",
-            "en/nodes/data-modifier/sentence-splitter"
-          ]
+          "pages": ["en/nodes/data_modifier/text_combiner", "en/nodes/data_modifier/sentence_splitter"]
         },
         {
           "group": "AI",
           "pages": [
-            "en/nodes/ai/llm-caller",
-            "en/nodes/ai/translator",
-            "en/nodes/ai/data-extractor"
+            "en/nodes/ai/data_extractor",
+            "en/nodes/ai/image_generator",
+            "en/nodes/ai/llm_caller",
+            "en/nodes/ai/perplexity",
+            "en/nodes/ai/prompt_generator",
+            "en/nodes/ai/translator"
           ]
         },
         {
           "group": "Data Writer",
           "pages": [
-            "en/nodes/data-writer/google-sheet-writer",
-            "en/nodes/data-writer/text-downloader",
-            "en/nodes/data-writer/csv-xlsx-downloader"
+            "en/nodes/data_writer/csv_xlsx_downloader",
+            "en/nodes/data_writer/gmail_sender",
+            "en/nodes/data_writer/google_sheet_writer",
+            "en/nodes/data_writer/text_downloader",
+            "en/nodes/data_writer/threads_poster",
+            "en/nodes/data_writer/twitter_poster"
+          ]
+        },
+        {
+          "group": "Video",
+          "pages": [
+            "en/nodes/video/video_autocropper",
+            "en/nodes/video/video_caption_generator",
+            "en/nodes/video/video_highlight_generator"
           ]
         }
       ]
@@ -101,32 +114,45 @@
         {
           "group": "데이터 로더",
           "pages": [
-            "ko/nodes/data-loader/file-loader",
-            "ko/nodes/data-loader/website-scraper",
-            "ko/nodes/data-loader/youtube-transcriber"
+            "ko/nodes/data_loader/file_loader",
+            "ko/nodes/data_loader/google_maps_scraper",
+            "ko/nodes/data_loader/website_scraper",
+            "ko/nodes/data_loader/youtube_downloader",
+            "ko/nodes/data_loader/youtube_transcriber"
           ]
         },
         {
           "group": "데이터 수정자",
-          "pages": [
-            "ko/nodes/data-modifier/text-combiner",
-            "ko/nodes/data-modifier/sentence-splitter"
-          ]
+          "pages": ["ko/nodes/data_modifier/text_combiner", "ko/nodes/data_modifier/sentence_splitter"]
         },
         {
           "group": "AI",
           "pages": [
-            "ko/nodes/ai/llm-caller",
-            "ko/nodes/ai/translator",
-            "ko/nodes/ai/data-extractor"
+            "ko/nodes/ai/data_extractor",
+            "ko/nodes/ai/image_generator",
+            "ko/nodes/ai/llm_caller",
+            "ko/nodes/ai/perplexity",
+            "ko/nodes/ai/prompt_generator",
+            "ko/nodes/ai/translator"
           ]
         },
         {
           "group": "데이터 작성자",
           "pages": [
-            "ko/nodes/data-writer/google-sheet-writer",
-            "ko/nodes/data-writer/text-downloader",
-            "ko/nodes/data-writer/csv-xlsx-downloader"
+            "ko/nodes/data_writer/csv_xlsx_downloader",
+            "ko/nodes/data_writer/gmail_sender",
+            "ko/nodes/data_writer/google_sheet_writer",
+            "ko/nodes/data_writer/text_downloader",
+            "ko/nodes/data_writer/threads_poster",
+            "ko/nodes/data_writer/twitter_poster"
+          ]
+        },
+        {
+          "group": "비디오",
+          "pages": [
+            "ko/nodes/video/video_autocropper",
+            "ko/nodes/video/video_caption_generator",
+            "ko/nodes/video/video_highlight_generator"
           ]
         }
       ]
@@ -139,4 +165,3 @@
     "indexHiddenPages": true
   }
 }
-

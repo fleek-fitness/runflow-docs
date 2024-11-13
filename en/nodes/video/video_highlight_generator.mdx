@@ -1,0 +1,32 @@
+---
+title: "Video Highlight Extractor"
+description: "Automatically detects and extracts multiple highlight clips from a video by identifying key moments."
+---
+### Node Input
+
+- `file` (FileType or FileType[]): Specifies the video file to analyze. You can provide a `FileType` object containing the URL of a video file as a single item or as a list.
+- `prompt` (string, optional): This text defines the criteria for generating video highlights. The default is "most viral moments," and it allows you to set the theme of the highlights to be analyzed.
+
+### Node Output
+
+- `videos` (FileType[]): This is a list of the generated highlight video files. Each video consists of a `FileType` object that includes the URL and file name.
+- `highlight_urls` (string[]): A list of URLs for the highlight videos.
+- `title` (string[]): A list of titles for the generated highlights.
+- `score` (number[]): A list of scores indicating the importance of each highlight.
+- `start_time` (number[]): A list of starting points (in seconds) for each highlight.
+- `end_time` (number[]): A list of ending points (in seconds) for each highlight.
+- `duration` (number[]): A list of lengths (in seconds) for each highlight.
+
+### Functionality
+
+The VideoHighlightGenerator node provides the capability to create clips by finding highlights from the input video based on specific criteria (prompt). For example, it can analyze a video with a setting like "most viral moments" to extract the most noteworthy moments as highlights and provide the results in the form of video clips. Users can render the clips into actual videos using the `render_clips` option.
+
+### When to Use?
+
+The VideoHighlightGenerator node is particularly useful in situations like:
+
+- When you want to automatically extract key scenes matching a specific theme from a long video
+- When generating short highlight clips suitable for social media
+- When quickly analyzing large volumes of video files to obtain important scenes and highlights
+
+This node is especially beneficial in content creation workflows where video summarization or key scene extraction is needed.

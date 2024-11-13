@@ -1,0 +1,34 @@
+---
+title: "Google Map Scraper"
+description: "Scrape search results from Google Maps and output a bunch of information about a place."
+---
+### Node Input
+
+- `query`: A keyword representing the place or information you wish to find on Google Maps. You can use keywords for a specific cafe name or location, for example.
+- `language`: Specifies the language for the search results. The default is "en" (English), but you can set it to other languages like "ko" (Korean).
+- `latitude`: (Optional) The latitude that serves as the basis for the search. Use this to filter results around a specific location.
+- `longitude`: (Optional) The longitude that serves as the basis for the search. Use this to filter results around a specific location.
+- `radius`: (Optional) Set the search radius in meters. Limits the search results within the specified range.
+- `max_results`: Sets the maximum number of search results to retrieve. The default is 10, but you can request more results if needed.
+
+### Node Output
+
+- `name`: A list of place names for each result.
+- `description`: A brief description of each result, including characteristics or key information about the place.
+- `address`: A list of addresses for each place.
+- `thumbnail`: A link to the thumbnail image of each place.
+- `category`: Information about the classification or category of each place. Example: cafe, restaurant, etc.
+- `latitude`: A list of latitude information for each place.
+- `longitude`: A list of longitude information for each place.
+- `reviews`: The number of reviews for each place.
+- `google_maps_link`: The Google Maps link for each place.
+- `website`: The website link for each place.
+- `phone`: The phone number for each place.
+
+### Functionality
+
+The GoogleMapsScraper node scrapes place information from Google Maps based on the given query and location information, providing various details like the name, description, and address of the place. You can filter places within a specific location or radius, display results in a particular language, and control the maximum number of results to gather the desired amount of information.
+
+### When to Use?
+
+This node is useful when you want to automatically collect place information that matches a specific area or keyword. For example, it can provide users with information on cafes, restaurants, attractions near a particular location, or be used to search for place data in location-based services. It is especially effective when detailed information about places is needed, or when bulk data collection for multiple places is required.

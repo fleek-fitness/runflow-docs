@@ -1,0 +1,27 @@
+---
+title: "Sentence Splitter"
+description: "Split text into a list based on a specific character."
+---
+
+### Node Input
+
+- `content` (string or string[]): The text content to be split into sentences. It can be a single text string or a list of text strings.
+
+### Node Output
+
+- `sentences` (string[]): A list of sentences resulting from splitting the provided `content`. Each item in this list represents an individual sentence.
+
+### Function
+
+The SentenceSplitter node processes the provided text content (`content`) and splits it into individual sentences. It uses a regex-based approach to identify sentence boundaries, ensuring accurate splitting across various punctuation marks and text patterns. This node helps in breaking down larger blocks of text into manageable sentence-level components.
+
+### When to Use It?
+
+The SentenceSplitter node is ideal for:
+
+- Dividing long text into individual sentences
+- Preparing content for text analysis
+- Assisting in summarization tasks
+- Any scenario requiring sentence-level granularity for further processing
+
+<Info>This node is particularly useful when you need to manage or analyze text content at the sentence level.</Info>

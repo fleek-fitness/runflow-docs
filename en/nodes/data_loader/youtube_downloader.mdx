@@ -1,0 +1,19 @@
+---
+title: "Youtube Video Downloader"
+description: "Download a Youtube video."
+---
+### Node Input
+
+- `url`: This is the URL of the YouTube video. Specify the URL to be downloaded.
+
+### Node Output
+
+- `video`: Represents the downloaded video file. The file is returned in `FileType` format and includes an S3 URL.
+
+### Functionality
+
+The YoutubeDownloader node downloads a video using the provided YouTube URL and uploads the downloaded file to an AWS S3 bucket. Once the video file is successfully uploaded, the S3 URL is returned for use by other nodes. This node supports downloading videos for a single URL or multiple URLs.
+
+### When to Use?
+
+This node is useful when you want to directly download videos from YouTube and save them to AWS S3. For example, you can use it to download and store specific YouTube content in an automated workflow for later analysis or sharing. It can be used for collecting large quantities of video files or for backup purposes.
