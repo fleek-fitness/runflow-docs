@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "versions": ["English", "한국어"],
+  "versions": ["English", "한국어" ],
   "name": "Runflow Docs",
   "logo": {
     "dark": "/images/logo.png",
