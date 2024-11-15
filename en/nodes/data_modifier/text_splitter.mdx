@@ -1,0 +1,25 @@
+---
+title: "Sentence Splitter"
+description: "Split text into a list based on a specific character."
+---
+
+### Node Input
+
+- `content` (string or string[]): The text to be split. It can be provided as a string or a list of strings.
+- `mode` (string): Sets the criteria for splitting the text. Available modes are:
+  - `"sentence"`: Splits by sentence.
+  - `"newline"`: Splits by newline.
+  - `"custom"`: Splits by a user-defined delimiter.
+- `customDelimiter` (string): The delimiter to use when `mode` is `"custom"`.
+
+### Node Output
+
+- `sentences` (string[]): A list of the split text. Each element represents a part of the split text.
+
+### Functionality
+
+The Text Splitter node divides the input text based on the criteria specified by the user. You can split text by sentence, newline, or a custom delimiter. This node makes it easier to process or analyze text by breaking it down into smaller units.
+
+### When to Use?
+
+The Text Splitter node is useful when you need to break down long text into smaller units. For example, you can use it to analyze each sentence of a document individually or process data line by line. Additionally, by using a custom delimiter, you can split text according to specific patterns, making it applicable to various text processing scenarios.
