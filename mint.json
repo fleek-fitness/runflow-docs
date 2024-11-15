@@ -64,7 +64,7 @@
         },
         {
           "group": "Data Modifier",
-          "pages": ["en/nodes/data_modifier/text_combiner", "en/nodes/data_modifier/sentence_splitter"]
+          "pages": ["en/nodes/data_modifier/text_combiner", "en/nodes/data_modifier/text_splitter"]
         },
         {
           "group": "AI",
@@ -85,7 +85,8 @@
             "en/nodes/data_writer/google_sheet_writer",
             "en/nodes/data_writer/text_downloader",
             "en/nodes/data_writer/threads_poster",
-            "en/nodes/data_writer/twitter_poster"
+            "en/nodes/data_writer/twitter_poster",
+            "en/nodes/data_writer/twitter_thread_poster"
           ]
         },
         {
@@ -123,7 +124,7 @@
         },
         {
           "group": "데이터 수정자",
-          "pages": ["ko/nodes/data_modifier/text_combiner", "ko/nodes/data_modifier/sentence_splitter"]
+          "pages": ["ko/nodes/data_modifier/text_combiner", "ko/nodes/data_modifier/text_splitter"]
         },
         {
           "group": "AI",
@@ -144,7 +145,8 @@
             "ko/nodes/data_writer/google_sheet_writer",
             "ko/nodes/data_writer/text_downloader",
             "ko/nodes/data_writer/threads_poster",
-            "ko/nodes/data_writer/twitter_poster"
+            "ko/nodes/data_writer/twitter_poster",
+            "ko/nodes/data_writer/twitter_thread_poster"
           ]
         },
         {

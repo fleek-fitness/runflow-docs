@@ -1,0 +1,27 @@
+---
+title: "X Thread Poster"
+description: "Post a content to X (formerly Twitter) as a thread. You can post multiple tweets as a thread."
+---
+
+### Node Input
+
+- `twitterUsername` (string): Specify the Twitter username. This name is used for authentication and posting.
+- `contents` (string[]): Provide the content of the tweets in a list format. Each item represents one tweet, with a maximum of 280 characters.
+
+### Node Output
+
+- `threadIds` (string[]): A list of unique IDs for each tweet in the posted thread.
+- `threadUrls` (string[]): A list of URLs for each tweet.
+- `firstTweetUrl` (string): The URL of the first tweet in the thread.
+
+### Features
+
+The "Twitter Thread Poster" node posts a thread on Twitter using the given tweet content. It sequentially posts the tweets provided by the user, with each tweet linked as a reply to the previous one. This node handles authentication and posting through the Twitter API.
+
+### When to Use?
+
+This node is useful when you want to post multiple related tweets on Twitter at once. For example, when you need to split a long explanation or story into several tweets, or when you want to share event or announcement details in a thread format. You can easily manage and post tweet threads in an automated way using this node.
+
+<Info>
+  To effectively manage and post Twitter threads, it's important to accurately input `twitterUsername` and `contents`.
+</Info>
