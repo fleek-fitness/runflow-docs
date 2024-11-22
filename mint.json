@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "versions": ["English", "한국어" ],
+  "versions": ["English", "한국어"],
   "name": "Runflow Docs",
   "logo": {
     "dark": "/images/logo.png",
@@ -50,50 +50,95 @@
       "pages": [
         {
           "group": "Core",
-          "pages": ["en/nodes/core/input", "en/nodes/core/output"]
-        },
-        {
-          "group": "Data Loader",
           "pages": [
-            "en/nodes/data_loader/file_loader",
-            "en/nodes/data_loader/google_maps_scraper",
-            "en/nodes/data_loader/website_scraper",
-            "en/nodes/data_loader/youtube_downloader",
-            "en/nodes/data_loader/youtube_transcriber"
+            {
+              "group": "Base",
+              "pages": ["en/nodes/core/base/input", "en/nodes/core/base/output"]
+            },
+            {
+              "group": "File",
+              "pages": [
+                "en/nodes/core/file/file_loader",
+                "en/nodes/core/file/csv_xlsx_downloader",
+                "en/nodes/core/file/text_downloader"
+              ]
+            },
+            {
+              "group": "Web",
+              "pages": ["en/nodes/core/web/website_scraper"]
+            },
+            {
+              "group": "AI",
+              "pages": [
+                "en/nodes/core/ai/llm_caller",
+                "en/nodes/core/ai/data_extractor",
+                "en/nodes/core/ai/prompt_generator",
+                "en/nodes/core/ai/translator"
+              ]
+            },
+            {
+              "group": "Text",
+              "pages": [
+                "en/nodes/core/text/text_combiner",
+                "en/nodes/core/text/sentence_splitter"
+              ]
+            },
+            {
+              "group": "List",
+              "pages": ["en/nodes/core/text/sentence_splitter"]
+            },
+            {
+              "group": "Image",
+              "pages": ["en/nodes/core/image/image_generator"]
+            },
+            {
+              "group": "Video",
+              "pages": [
+                "en/nodes/core/video/video_autocropper",
+                "en/nodes/core/video/video_caption_generator",
+                "en/nodes/core/video/video_highlight_generator"
+              ]
+            }
           ]
         },
         {
-          "group": "Data Modifier",
-          "pages": ["en/nodes/data_modifier/text_combiner", "en/nodes/data_modifier/sentence_splitter"]
-        },
-        {
-          "group": "AI",
+          "group": "Integrations",
           "pages": [
-            "en/nodes/ai/data_extractor",
-            "en/nodes/ai/image_generator",
-            "en/nodes/ai/llm_caller",
-            "en/nodes/ai/perplexity",
-            "en/nodes/ai/prompt_generator",
-            "en/nodes/ai/translator"
-          ]
-        },
-        {
-          "group": "Data Writer",
-          "pages": [
-            "en/nodes/data_writer/csv_xlsx_downloader",
-            "en/nodes/data_writer/gmail_sender",
-            "en/nodes/data_writer/google_sheet_writer",
-            "en/nodes/data_writer/text_downloader",
-            "en/nodes/data_writer/threads_poster",
-            "en/nodes/data_writer/twitter_poster"
-          ]
-        },
-        {
-          "group": "Video",
-          "pages": [
-            "en/nodes/video/video_autocropper",
-            "en/nodes/video/video_caption_generator",
-            "en/nodes/video/video_highlight_generator"
+            {
+              "group": "Gmail",
+              "pages": ["en/nodes/integrations/gmail/gmail_sender"]
+            },
+            {
+              "group": "Google Search",
+              "pages": [
+                "en/nodes/integrations/google_search/google_maps_scraper"
+              ]
+            },
+            {
+              "group": "Google Sheets",
+              "pages": [
+                "en/nodes/integrations/google_sheets/google_sheets_writer"
+              ]
+            },
+            {
+              "group": "Perplexity",
+              "pages": ["en/nodes/integrations/perplexity/perplexity"]
+            },
+            {
+              "group": "Threads",
+              "pages": ["en/nodes/integrations/threads/threads_poster"]
+            },
+            {
+              "group": "Twitter",
+              "pages": ["en/nodes/integrations/twitter/twitter_poster"]
+            },
+            {
+              "group": "Youtube",
+              "pages": [
+                "en/nodes/integrations/youtube/youtube_downloader",
+                "en/nodes/integrations/youtube/youtube_transcriber"
+              ]
+            }
           ]
         }
       ]
@@ -109,50 +154,95 @@
       "pages": [
         {
           "group": "코어",
-          "pages": ["ko/nodes/core/input", "ko/nodes/core/output"]
-        },
-        {
-          "group": "데이터 로더",
           "pages": [
-            "ko/nodes/data_loader/file_loader",
-            "ko/nodes/data_loader/google_maps_scraper",
-            "ko/nodes/data_loader/website_scraper",
-            "ko/nodes/data_loader/youtube_downloader",
-            "ko/nodes/data_loader/youtube_transcriber"
+            {
+              "group": "베이스",
+              "pages": ["ko/nodes/core/base/input", "ko/nodes/core/base/output"]
+            },
+            {
+              "group": "파일",
+              "pages": [
+                "ko/nodes/core/file/file_loader",
+                "ko/nodes/core/file/csv_xlsx_downloader",
+                "ko/nodes/core/file/text_downloader"
+              ]
+            },
+            {
+              "group": "웹",
+              "pages": ["ko/nodes/core/web/website_scraper"]
+            },
+            {
+              "group": "AI",
+              "pages": [
+                "ko/nodes/core/ai/llm_caller",
+                "ko/nodes/core/ai/data_extractor",
+                "ko/nodes/core/ai/prompt_generator",
+                "ko/nodes/core/ai/translator"
+              ]
+            },
+            {
+              "group": "텍스트",
+              "pages": [
+                "ko/nodes/core/text/text_combiner",
+                "ko/nodes/core/text/sentence_splitter"
+              ]
+            },
+            {
+              "group": "리스트",
+              "pages": ["ko/nodes/core/text/sentence_splitter"]
+            },
+            {
+              "group": "이미지",
+              "pages": ["ko/nodes/core/image/image_generator"]
+            },
+            {
+              "group": "비디오",
+              "pages": [
+                "ko/nodes/core/video/video_autocropper",
+                "ko/nodes/core/video/video_caption_generator",
+                "ko/nodes/core/video/video_highlight_generator"
+              ]
+            }
           ]
         },
         {
-          "group": "데이터 수정자",
-          "pages": ["ko/nodes/data_modifier/text_combiner", "ko/nodes/data_modifier/sentence_splitter"]
-        },
-        {
-          "group": "AI",
+          "group": "연동",
           "pages": [
-            "ko/nodes/ai/data_extractor",
-            "ko/nodes/ai/image_generator",
-            "ko/nodes/ai/llm_caller",
-            "ko/nodes/ai/perplexity",
-            "ko/nodes/ai/prompt_generator",
-            "ko/nodes/ai/translator"
-          ]
-        },
-        {
-          "group": "데이터 작성자",
-          "pages": [
-            "ko/nodes/data_writer/csv_xlsx_downloader",
-            "ko/nodes/data_writer/gmail_sender",
-            "ko/nodes/data_writer/google_sheet_writer",
-            "ko/nodes/data_writer/text_downloader",
-            "ko/nodes/data_writer/threads_poster",
-            "ko/nodes/data_writer/twitter_poster"
-          ]
-        },
-        {
-          "group": "비디오",
-          "pages": [
-            "ko/nodes/video/video_autocropper",
-            "ko/nodes/video/video_caption_generator",
-            "ko/nodes/video/video_highlight_generator"
+            {
+              "group": "Gmail",
+              "pages": ["ko/nodes/integrations/gmail/gmail_sender"]
+            },
+            {
+              "group": "Google Search",
+              "pages": [
+                "ko/nodes/integrations/google_search/google_maps_scraper"
+              ]
+            },
+            {
+              "group": "Google Sheets",
+              "pages": [
+                "ko/nodes/integrations/google_sheets/google_sheets_writer"
+              ]
+            },
+            {
+              "group": "Perplexity",
+              "pages": ["ko/nodes/integrations/perplexity/perplexity"]
+            },
+            {
+              "group": "Threads",
+              "pages": ["ko/nodes/integrations/threads/threads_poster"]
+            },
+            {
+              "group": "Twitter",
+              "pages": ["ko/nodes/integrations/twitter/twitter_poster"]
+            },
+            {
+              "group": "Youtube",
+              "pages": [
+                "ko/nodes/integrations/youtube/youtube_downloader",
+                "ko/nodes/integrations/youtube/youtube_transcriber"
+              ]
+            }
           ]
         }
       ]
